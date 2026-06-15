@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Code Comments Have More Bugs Than Your Code</title>
+<meta name="description" content="Practical guide: your code comments have more bugs than your code">
+<link rel="canonical" href="https://belikenative.com/grammar-checking-code-comments-prs/">
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:720px;margin:40px auto;padding:0 20px;line-height:1.7;color:#333;background:#fff}
+h1{font-size:1.8em;line-height:1.3;margin-bottom:8px}
+h2{font-size:1.4em;margin-top:32px}
+h3{font-size:1.2em;margin-top:24px}
+p{margin:16px 0}
+a{color:#2563eb;text-decoration:none}
+a:hover{text-decoration:underline}
+ul{padding-left:24px}
+li{margin:8px 0}
+.source{color:#666;font-size:14px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #eee}
+.footer{margin-top:40px;padding-top:20px;border-top:1px solid #eee;color:#666;font-size:14px}
+</style>
+</head>
+<body>
+<article>
+<h1>Your Code Comments Have More Bugs Than Your Code</h1>
+<div class="source">Originally published at <a href="https://belikenative.com/grammar-checking-code-comments-prs/">belikenative.com/grammar-checking-code-comments-prs</a></div>
+<p>**Your Code Comments Have More Bugs Than Your Code**</p>
+<p>Full disclosure: I built BeLikeNative (https://belikenative.com), a free Chrome extension for real-time grammar and writing help. Take my perspective accordingly. But before you dismiss this as another tool pitch, let me walk through the real cost of sloppy writing in code comments, documentation, and pull request descriptions. I have been a developer for over a decade, and I have seen more production outages traced back to ambiguous documentation than to logic errors in the code itself. The problem is not that we write poorly. The problem is that we treat writing as a secondary skill, something we can rush through after the real work is done. That assumption is wrong. Grammar checking is not about pedantry. It is about precision, trust, and reducing cognitive load for everyone who touches your code.</p>
+<p>Let us start with code comments. A comment that says “fixes the edge case” is almost useless. Which edge case? Why was it broken? What assumptions changed? A comment like “Resolves the off-by-one error in the loop when the array is empty” is better, but if you write “the array is empty” with a missing article or a misplaced modifier, the reader might misinterpret the scope. I have debugged systems where a comment said “do not call this function after initialization” but the grammar was so loose that the junior developer thought it meant “do not call after initialization of the variable,” when it actually meant “do not call after the system initialization.” That single missing word cost three hours of wasted work. Comments are the first line of defense for future you and your teammates. If they are grammatically ambiguous, they become a source of bugs, not a clarification.</p>
+<p>Documentation is even more exposed. API docs, README files, and internal wikis are the contract between the code and its users. If your documentation says “this parameter accepts a string or number,” but you write “this parameter accepts a string or number, but not both” with a comma splice, the reader might think the second clause is an example rather than a restriction. I have seen entire integration cycles wasted because a developer misread a poorly punctuated sentence. The cost is not just time. It is trust. When documentation is full of typos and grammatical errors, users assume the code is also sloppy. I have had product managers ask me to rewrite documentation because they did not trust the accuracy of the original author. Grammar checking is not about making you look smart. It is about making your code credible.</p>
+<p>Pull request descriptions are the most urgent case. A PR description is a sales pitch for your changes. It tells reviewers what you did, why you did it, and what risks you mitigated. If your description says “fixed the bug where the app crashes when the user logs in,” but you forgot a comma or used the wrong tense, a reviewer might think the fix is partial or temporary. I have seen PRs rejected because the description was unclear, not because the code was wrong. The reviewer spent ten minutes trying to understand the intent, then gave up and asked for a rewrite. That is ten minutes of billable time lost because of a missing period or a dangling participle. Grammar checking in PR descriptions is not about perfection. It is about respect for your colleagues’ time.</p>
+<p>Why do developers ignore grammar? Many think it is a nontechnical concern. They believe that as long as the code compiles and passes tests, the text around it is decoration. But code is read far more often than it is written. The text surrounding code is what helps readers understand the context, the tradeoffs, and the history. If that text is broken, the reader has to reconstruct meaning from scratch. That is a cognitive tax that compounds over time. A single ambiguous comment in a critical function can lead to a bug that takes hours to trace. A poorly written PR description can delay a deployment by a day. And bad documentation can cause a customer to abandon your product.</p>
+<p>The argument that “grammar doesn’t matter because the code is what runs” is dangerously naive. Code runs on machines. Teams run on communication. Machines do not care about grammar. Humans do. And humans are the ones who review, maintain, and extend your code. If your writing is unclear, you are imposing a burden on every person who has to read it. That burden adds up to real productivity loss.</p>
+<p>There is also the issue of nonnative English speakers in our field. Many developers write in English as a second or third language. They are brilliant engineers, but they may not know the subtle rules of articles, prepositions, or tense. Grammar checking helps them communicate their intent clearly without needing a native speaker to proofread. That is not a crutch. It is a bridge. It levels the playing field so that code quality is judged on logic, not on language fluency.</p>
+<p>I did not build BeLikeNative because I think developers are lazy writers. I built it because I saw the same pattern over and over: a brilliant engineer writes a comment that is technically correct but grammatically ambiguous, and that ambiguity creates a cascade of confusion. A grammar checker running in real time, as you type in your browser, catches those ambiguities before they become bugs. It does not change your voice. It does not rewrite your logic. It just flags the places where your meaning might slip.</p>
+<p>The next time you write a comment like “handles the null case,” ask yourself: does it handle the null case by ignoring it, returning a default, or crashing? If you cannot answer that from the comment alone, you have a grammatical bug. The same goes for documentation that says “call this after the user selects a file.” After which user action? After the file is selected, or after the selection dialog closes? The difference matters.</p>
+<p>I build BeLikeNative (https://belikenative.com), a free Chrome extension that helps you write better English anywhere on the web. No signup, no data collection.</p>
+<div class="footer">
+<p>Read the original at <a href="https://belikenative.com/grammar-checking-code-comments-prs/">belikenative.com/grammar-checking-code-comments-prs</a></p>
+<p><a href="https://belikenative.com">BeLikeNative</a> is a free Chrome extension for real-time grammar checking and writing improvement.</p>
+</div>
+</article>
+</body>
+</html>
